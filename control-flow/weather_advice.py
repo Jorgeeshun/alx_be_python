@@ -5,9 +5,9 @@ user_input = print("Whats the weather like toaday? (Sunny/Rainy/Cold): ")
 def cloth_recommendation():
     if user_input.lower() == "sunny":
         print("Wear a t-shirt and sunglasses.")
-    if user_input.lower():
+    if user_input.lower() == "rainy":
         print("Don't forget your umbrella and raincoat.")
-    if user_input.lower():
+    if user_input.lower() == "cold":
         print("Make sure to wear a warm coat and a scarf.")
 
     else:
