@@ -1,14 +1,16 @@
-# Prompt User for Weather Input:
-user_input = print("Whats the weather like toaday? (Sunny/Rainy/Cold): ")
+def main():
+    # Prompt the User for Weather Input
+    weather = input("What's the weather like today? (Sunny/Rainy/Cold): ").strip().lower()
 
-# Prompt User for Weather Input:
-def cloth_recommendation():
-    if user_input.lower() == "sunny":
+    if weather == 'sunny':
         print("Wear a t-shirt and sunglasses.")
-    if user_input.lower() == "rainy":
+    elif weather == 'rainy':
         print("Don't forget your umbrella and raincoat.")
-    if user_input.lower() == "cold":
+    elif weather == 'cold':
         print("Make sure to wear a warm coat and a scarf.")
-
     else:
         print("Sorry I don't have a recomendations for this weather.")
+
+if __name__ == "__main__":
+    main()
+
