@@ -11,11 +11,17 @@ def draw_square_pattern(size):
         print()  # Print a newline character after each row
         row += 1  # Move to the next row
 
-
+def main():
+    try:
         # Prompt the user to input a positive integer
-    size = int(input("Enter the size of the pattern: "))
-    if size <= 0:
-        print("Error: The size must be a positive integer.")
-    else:
-        draw_square_pattern(size)
-        
+        size = int(input("Enter the size of the pattern: "))
+
+        if size <= 0:
+            print("Error: The size must be a positive integer.")
+        else:
+            draw_square_pattern(size)
+    except ValueError:
+        print("Error: Please enter a valid positive integer.")
+
+if __name__ == "__main__":
+    main()
