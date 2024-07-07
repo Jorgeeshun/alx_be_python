@@ -6,15 +6,15 @@ def display_menu():
     print("4. Exit")
 
 def add_item(shopping_list):
-    item = input(f"Enter the item to add: ").strip()
+    item = input("Enter the item to add: ").strip()
     if item:
         shopping_list.append(item)
         print(f"Added '{item}' to the shopping list.")
     else:
-        print(f"Invalid item name. Item not added.")
+        print("Invalid item name. Item not added.")
 
 def remove_item(shopping_list):
-    item = input(f"Enter the item to remove: ").strip()
+    item = input("Enter the item to remove: ").strip()
     if item in shopping_list:
         shopping_list.remove(item)
         print(f"Removed '{item}' from the shopping list.")
@@ -23,17 +23,17 @@ def remove_item(shopping_list):
 
 def view_list(shopping_list):
     if shopping_list:
-        print(f"Current Shopping List:")
+        print("Current Shopping List:")
         for idx, item in enumerate(shopping_list, start=1):
             print(f"{idx}. {item}")
     else:
-        print(f"The shopping list is currently empty.")
+        print("The shopping list is currently empty.")
 
 def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input(f"Enter your choice: ").strip()
+        choice = input("Enter your choice: ").strip()
 
         if choice == '1':
             add_item(shopping_list)
@@ -42,10 +42,10 @@ def main():
         elif choice == '3':
             view_list(shopping_list)
         elif choice == '4':
-            print(f"Goodbye!")
+            print("Goodbye!")
             break
         else:
-            print(f"Invalid choice. Please try again.")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
