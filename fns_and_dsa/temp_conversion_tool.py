@@ -20,7 +20,7 @@ def main():
     try:
         # Prompt user for temperature and unit
         temperature = float(input("Enter the temperature to convert: "))
-        unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
+        unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
         if unit == 'F':
             converted_temperature = convert_to_celsius(temperature)
