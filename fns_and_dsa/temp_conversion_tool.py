@@ -18,7 +18,7 @@ def FAHRENHEIT_TO_CELCIUS_FACTOR(fahrenheit):
     except ValueError:
         raise ValueError("Invalid temperature. Please enter a numeric value.")
 
-def convert_to_fahrenheit(celsius):
+def CELSIUS_TO_FAHRENHEIT_FACTOR(celsius):
     """
     Convert Celsius to Fahrenheit using the global conversion factor.
     """
