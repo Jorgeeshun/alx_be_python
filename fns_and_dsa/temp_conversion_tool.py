@@ -24,7 +24,7 @@ def convert_to_fahrenheit(celsius):
     # Convert the input Celsius temperature to Fahrenheit
     try:
         celsius = float(celsius)
-        C_to_F_value = (CELSIUS_TO_FAHRENHEIT_FACTOR*(9/5))+32
+        C_to_F_value = (CELSIUS_TO_FAHRENHEIT_FACTOR+32)*9/5
         return fahrenheit
     except ValueError:
         raise ValueError("Invalid temperature. Please enter a numeric value.")
