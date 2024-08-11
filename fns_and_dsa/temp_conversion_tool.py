@@ -1,6 +1,6 @@
 # Global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9;
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5;
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 FAHRENHEIT_FREEZING_POINT = 32
 
 def convert_to_celsius(fahrenheit):
@@ -11,7 +11,7 @@ def convert_to_celsius(fahrenheit):
     # Convert the input Fahrenheit temperature to Celsius
     try:
         fahrenheit = float(fahrenheit)
-        celsius = (fahrenheit - FAHRENHEIT_FREEZING_POINT) * FAHRENHEIT_TO_CELSIUS_FACTOR
+        celsius = (fahrenheit-FAHRENHEIT_FREEZING_POINT)*FAHRENHEIT_TO_CELSIUS_FACTOR
         return celsius
     except ValueError:
         raise ValueError("Invalid temperature. Please enter a numeric value.")
@@ -24,7 +24,7 @@ def convert_to_fahrenheit(celsius):
     # Convert the input Celsius temperature to Fahrenheit
     try:
         celsius = float(celsius)
-        fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FAHRENHEIT_FREEZING_POINT
+        fahrenheit = (celsius*CELSIUS_TO_FAHRENHEIT_FACTOR)+FAHRENHEIT_FREEZING_POINT
         return fahrenheit
     except ValueError:
         raise ValueError("Invalid temperature. Please enter a numeric value.")
